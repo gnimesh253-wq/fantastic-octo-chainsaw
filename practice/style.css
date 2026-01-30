@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+#container {
+    position: relative;
+    width: 300px; 
+
+}
+
+#container img {
+    width: 100%;
+    height: auto;
+    opacity: 0.7;
+}
+
+
+#container div {
+    position: absolute;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+ 
+.top-left {
+    top: 0px;
+    left: 0px;
+}
+
+.top-right {
+    top:0px;
+    right:0px;
+}
+
+.bottom-left {
+    bottom:0px;
+    left:0px;
+}
+
+.bottom-right {
+    bottom:0px;
+    right:0px;
+}
+
+.centered {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
