@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    background-color:rgb(45, 9, 204);
+}
+
+.nav{
+    background-color:skyblue;
+    text-align: center;
+}
+
+.nav ul li{
+    display: inline;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: green;
+    padding:  20px;
+    display: inline-flex;
+    transition: prop time;
+}
+
+.nav ul li a:hover{
+    color:yellow;
+    text-shadow: 0 0 15px rgb(128, 128, 65);
+    transform: scale(1.3);
+}
