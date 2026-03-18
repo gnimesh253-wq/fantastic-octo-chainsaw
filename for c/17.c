@@ -3,43 +3,48 @@
 
 int main()
 {
-    float num1, num2;
+    float a, b, result;
     char op;
 
-
     printf("Enter first number: ");
-    scanf("%f", &num1);
+    scanf("%f", &a);
 
     printf("Enter second number: ");
-    scanf("%f", &num2);
+    scanf("%f", &b);
 
-
-    printf("Enter operator (+, -, *, /): ");
+    printf("Enter operator (+ - * /): ");
     scanf(" %c", &op);
-
 
     if(op == '+')
     {
-        printf("Answer = %.2f\n", num1 + num2);
+        result = a + b;
+        printf("Result = %f", result);
     }
     else if(op == '-')
     {
-        printf("Answer = %.2f\n", num1 - num2);
+        result = a - b;
+        printf("Result = %f", result);
     }
     else if(op == '*')
     {
-        printf("Answer = %.2f\n", num1 * num2);
+        result = a * b;
+        printf("Result = %f", result);
     }
     else if(op == '/')
     {
-        if(num2 != 0)
-            printf("Answer = %.2f\n", num1 / num2);
+        if(b != 0)
+        {
+            result = a / b;
+            printf("Result = %f", result);
+        }
         else
-            printf("Cannot divide by zero\n");
+        {
+            printf("Error: divide by zero");
+        }
     }
     else
     {
-        printf("Wrong operator\n");
+        printf("Invalid operator");
     }
 
     return 0;
