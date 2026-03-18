@@ -3,23 +3,39 @@
 
 int main()
 {
-    int a, b, c, d, max;
+    int a, b, c, d;
+    int max;
 
-    printf("Enter four numbers: ");
-    scanf("%d %d %d %d", &a, &b, &c, &d);
+    printf("Enter first number: ");
+    scanf("%d", &a);
 
-    max = a;   // assume first number is greatest
+    printf("Enter second number: ");
+    scanf("%d", &b);
+
+    printf("Enter third number: ");
+    scanf("%d", &c);
+
+    printf("Enter fourth number: ");
+    scanf("%d", &d);
+
+    max = a;
 
     if(b > max)
+    {
         max = b;
+    }
 
     if(c > max)
+    {
         max = c;
+    }
 
     if(d > max)
+    {
         max = d;
+    }
 
-    printf("Greatest number = %d\n", max);
+    printf("Greatest number = %d", max);
 
     return 0;
 }
