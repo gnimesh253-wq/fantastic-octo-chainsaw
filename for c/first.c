@@ -1,4 +1,4 @@
-// to find multiplication for three number
+// to find multiplication for three number \ avg
 #include <stdio.h>
 
 int main()
